@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<style>
+td{
+    text-align: right;  
+}
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 2</title>
+</head>
+<body style="text-align: center; ">
+    <h2>Seugundo Exemplo de Formulario</h2>
+    <form action="">
+    <table style="border: 1; display: inline-block; ">
+        <tr>
+            <td>Nome</td>
+            <td><input type="text" name="nome" placeholder="Digite seu nome"></td>
+        </tr>
+        <tr>
+            <td>E-mail</td>
+            <td><input type="email" placeholder="Digite seu e-mail"></td>
+        </tr>
+        <tr>
+            <td>Salario</td>
+            <td><input type="number" placeholder="Digite somente numeros"></td>
+        </tr>
+        <tr>
+            <td>Telefone</td>
+            <td><input type="tel" placeholder="Digite seu telefone"></td>
+        </tr>
+        <tr>
+            <td>UF de Nascimento</td>
+            <td>
+                <select name="uf" style="width: 87%;">
+                    <option selected disabled>Selecione</option>
+                    <option>Rondonia</option>
+                    <option>Roraima</option>
+                    <option>Amazonas</option>
+                    <option>Acre</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Hobby</td>
+            <td>
+                <input type="radio" name="hobby" value="jogos">Jogos
+                <input type="radio" name="hobby" value="esporte">Esporte
+                <input type="radio" name="hobby" value="musica">Musica
+            </td>
+        </tr>
+    </table>
+    <br>&nbsp;
+    <input type="submit" value="Enviar">
+    <input type="reset" value="Limpar">
+    </form>
+    <br><hr>
+    <a href="../Formulario/formulario.html">Formulario 1</a>
+</body>
+</html>
