@@ -1,0 +1,105 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+.principal{
+    width: 50%;
+    margin-top: 10px;
+}
+#logo{
+    margin-left: 10px;
+}
+#text{
+    margin-top: 5%;
+}
+#text1{
+    margin-top: 55%;
+}
+.logo{
+    border: 1px solid black;
+    width: 80%;
+    height: 75px;
+    margin-left: 10%;
+    background-color: rgb(192, 192, 192);
+}
+.navigation{
+    border: 1px solid black;
+    width: 80%;
+    height: 50px;
+    margin-left: 10%;
+    margin-top: 10px;
+    text-align: center;
+    position: relative;
+    float: left;
+    background-color: rgb(192, 192, 192);
+}
+.header{
+    border: 1px solid black;
+    width: 80%;
+    height: 100px;
+    margin-left: 10%;
+    margin-top: 10px;
+    text-align: center;
+    position: relative;
+    float: left;
+    background-color: rgb(192, 192, 192);
+}
+.intro{
+    border: 1px solid black;
+    width: 80%;
+    height: 100px;
+    margin-left: 10%;
+    margin-top: 10px;
+    text-align: center;
+    position: relative;
+    float: left;
+    background-color: rgb(192, 192, 192);
+}
+.box1{
+    border: 1px solid black;
+    width: 26%;
+    height: 350px;
+    margin-left: 10%;
+    margin-top: 10px;
+    text-align: center;
+    position: relative;
+    float: left;
+    background-color: rgb(192, 192, 192);
+}
+.box2{
+    border: 1px solid black;
+    width: 26%;
+    height: 350px;
+    margin-left: 1.5%;
+    margin-top: 10px;
+    text-align: center;
+    position: relative;
+    float: left;
+    background-color: rgb(192, 192, 192);
+}
+.box3{
+    border: 1px solid black;
+    width: 25%;
+    height: 350px;
+    margin-left: 1%;
+    margin-top: 10px;
+    text-align: center;
+    position: relative;
+    float: left;
+    background-color: rgb(192, 192, 192);
+}
+.footer{    
+    border: 1px solid black;
+    width: 80%;
+    height: 50px;
+    margin-left: 10%;
+    margin-top: 10px;
+    text-align: center;
+    position: relative;
+    float: left;
+    background-color: rgb(192, 192, 192);
+}
+p{
+    font-size: 14pt;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
