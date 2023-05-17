@@ -32,9 +32,9 @@ alert(segundo + ' segundos equivalem a ' + converter + ' minutos ' + sobra + ' s
 
 var min = parseInt(prompt('Digite quantidade de minutos(s):'));
 
-var dias = Math.trunc(min/60/24)
-var hora = dias%24
-var sobra = hora%60
+var dias = Math.trunc(min/1440)
+var hora = Math.trunc(dias%60)
+var sobra = min%60
 
 //alert(hora)
 
