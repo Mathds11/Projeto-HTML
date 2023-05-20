@@ -29,13 +29,21 @@ var sobra = segundo%60
 alert(segundo + ' segundos equivalem a ' + converter + ' minutos ' + sobra + ' segundos')
 */
 
-
+/* Questão 4
 var min = parseInt(prompt('Digite quantidade de minutos(s):'));
 
 var dias = Math.trunc(min/1440)
-var hora = Math.trunc(dias%60)
+var hora = Math.trunc((min%1440)/60)
 var sobra = min%60
 
 //alert(hora)
 
-alert(min + ' minutos equivale a: ' + dias + ' dia(s) e ' + hora + ' hora(s) e ' + sobra + ' minutos')
+document.write(min + ' minutos equivale a: ' + dias + ' dia(s) e ' + hora + ' hora(s) e ' + sobra + ' minuto(s)')
+*/
+
+var h = parseInt(prompt('Digite quantidade de horas(s):'));
+var min = parseInt(prompt('Digite quantidade de minutos(s):'));
+
+var total = ((h*60)+min)
+
+document.write(h + ' hora(s) e ' + min + ' minuto(s)' + ' equivale a: ' + total + ' minuto(s)')
