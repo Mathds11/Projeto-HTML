@@ -19,8 +19,7 @@ var reajuste = r * 0.02
 alert('Seu saldo é de: ' + r + ' e reajuste de 2% é: ' + reajuste)
 */
 
-/*
-Questionario 3
+/* Questionario 3
 var segundo = parseInt(prompt('Digite quantidade de segundo(s):'));
 
 var converter = Math.trunc(segundo/60)
@@ -29,7 +28,7 @@ var sobra = segundo%60
 alert(segundo + ' segundos equivalem a ' + converter + ' minutos ' + sobra + ' segundos')
 */
 
-/* Questão 4
+/* QuQuestionario 4
 var min = parseInt(prompt('Digite quantidade de minutos(s):'));
 
 var dias = Math.trunc(min/1440)
@@ -41,9 +40,25 @@ var sobra = min%60
 document.write(min + ' minutos equivale a: ' + dias + ' dia(s) e ' + hora + ' hora(s) e ' + sobra + ' minuto(s)')
 */
 
+/* Questionario 5
 var h = parseInt(prompt('Digite quantidade de horas(s):'));
 var min = parseInt(prompt('Digite quantidade de minutos(s):'));
 
 var total = ((h*60)+min)
 
 document.write(h + ' hora(s) e ' + min + ' minuto(s)' + ' equivale a: ' + total + ' minuto(s)')
+*/
+
+/* Questionario 6
+var r = parseInt(prompt('Digite o raio da circuferencia em metros:'));
+
+var total = Math.trunc(2*Math.PI*r)
+
+document.write('Comprimento aproximado é de ' + total + ' metros')
+*/
+
+var p = parseInt(prompt('Digite comprimento em polegadas:'));
+
+var total = ((p*25.4)/1)
+
+document.write(p + ' Polegadas' + ' equivale a: ' + total + ' mm')
