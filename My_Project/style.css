@@ -1,0 +1,48 @@
+body, html{
+    margin: 0;
+    padding: 0;
+}
+.corpo{
+    width: 98%;
+    height: auto;
+    position: absolute;
+    text-align: center;
+    margin: 0 10px;
+    border: 1px solid red;
+}
+.header{
+    text-align: center;
+    position: relative;
+}
+.int{
+    width: 98%;
+    height: auto;
+    margin: 1%;
+    text-align: center;
+    position: relative;
+    float: left;
+    border: 1px solid green;
+}
+.sub{
+    width: 98%;
+    height: 250px;
+    margin: 1%;
+    background-image: url(../My_Project/my_midia/imagem/20210102121123_IMG_0123.JPG);
+    background-position: center;
+    background-size: cover;
+}
+.s1{
+    text-align: center;
+    position: relative;
+    float: left;
+}
+.img1{
+    width: auto;
+    height: auto;
+    max-width: 250px;
+}
+.txt1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
