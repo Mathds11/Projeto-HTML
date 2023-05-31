@@ -34,28 +34,29 @@
         titulo.style.backgroundColor = 'green';
 
         let txtNum1 = document.querySelector('#num1');
-        let botao = document.querySelector("bt1")
+        let txtNum2 = document.querySelector('#num2');
+        let botao = document.querySelector("#bt1");
         // txtNum1.value = 4.2;
-
+        
+        /*
         function verNum(){
             result.innerHTML = 'Informe um valor maior que 0!';
         };
 
         txtNum1.onmouseout = function(){
-            result.innerHTML = "Digite";
+            result.innerHTML = "Digite um valor!";
         };
+        */
 
-        bt1.onclick = function(){
-            if(txtNum1.value > txtNum2.value){
+        botao.onclick = function(){
+            if(parseFloat(txtNum1.value) > parseFloat(txtNum2.value)){
                 result.innerHTML = 'O maior valor é o primeiro';
-            }
-            else if(txtNum2.value > txtNum1.value){
+            }else if(parseFloat(txtNum2.value) > parseFloat(txtNum1.value)){
                 result.innerHTML = 'O maior valor é o segundo';
-            }
-            else{
+            }else{
                 result.innerHTML = 'Os valores são iguais';
-            };
-        }
+            }
+        };
     </script>
 </body>
 </html>

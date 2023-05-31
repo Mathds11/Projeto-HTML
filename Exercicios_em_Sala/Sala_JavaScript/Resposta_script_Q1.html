@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resposta 30.05</title>
+</head>
+<body>
+    <p>Resposta do Questionario 1</p>
+    <br>
+    <fieldset>
+        <label for="v1">Valor 1:</label>
+        <input type="number" id="v1" step="0.1" min="0"><br>
+        <br>
+        <input type="button" id="r" value="Resultado">
+    </fieldset>
+    <script>
+        let txtv1 = document.querySelector('#v1');
+        let resultado = document.querySelector('#r');
+
+        resultado.onclik() = function(){
+            if(perseFloat(txtv1.value) > 20){
+                result.innerHTML = 'Valor está entre 20 e 90';
+            }else{
+                result.innerHTML = 'Valor não está entre 20 e 90';
+            }
+        }
+    </script>
+</body>
+</html>
