@@ -49,14 +49,14 @@ var total = ((h*60)+min)
 document.write(h + ' hora(s) e ' + min + ' minuto(s)' + ' equivale a: ' + total + ' minuto(s)')
 */
 
-/* Questionario 6
+Questionario 6
 var r = parseInt(prompt('Digite o raio da circuferencia em metros:'));
 
 var total = Math.trunc(2*Math.PI*r)
 
 document.write('Comprimento aproximado é de ' + total + ' metros')
-*/
 
+Questionario 7
 var p = parseInt(prompt('Digite comprimento em polegadas:'));
 
 var total = ((p*25.4)/1)
