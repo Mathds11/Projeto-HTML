@@ -20,13 +20,20 @@ btSexo.onclick = function(){
     sexo.forEach(s => {
         s.checked ? mens += s.value + '\n': undefined;
     });
-    mens += '\n Hobbiens: \n';
+    mens += '\nHobbiens: \n';
     hobbies.forEach(h => {
         mens += h.checked ? h.value + '\n' : '';
     });
-    mensagem.text = mens;
+    mensagem.value = mens;
 };
 
 uf.onchange = function(){
-    alert(this.value);
+    // alert(this.value);
+    switch(this.value){
+            case 'AC' : natural.innerHTML = 'Acreano'; break;
+            case 'AL' : natural.innerHTML = 'Alagoano'; break;
+            case 'BA' : natural.innerHTML = 'Baiano'; break;
+            case 'AM' : natural.innerHTML = 'Amazonese'; break;
+            default : natural.innerHTML = 'Outros estados'
+    }
 };
