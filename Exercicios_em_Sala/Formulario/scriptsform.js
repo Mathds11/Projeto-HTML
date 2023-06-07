@@ -26,3 +26,7 @@ btSexo.onclick = function(){
     });
     mensagem.text = mens;
 };
+
+uf.onchange = function(){
+    alert(this.value);
+};
