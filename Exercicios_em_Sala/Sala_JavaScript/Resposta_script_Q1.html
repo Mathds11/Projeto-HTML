@@ -7,25 +7,19 @@
     <title>Resposta 30.05</title>
 </head>
 <body>
-    <p>Resposta do Questionario 1</p>
-    <br>
+    <div style="width: 20%;">
     <fieldset>
-        <label for="v1">Valor 1:</label>
-        <input type="number" id="v1" step="0.1" min="0"><br>
+        <legend>Resposta do Questionario</legend>
+        <label for="valor">Valor:</label>
+        <input type="number" id="valor" step="0.1" min="0">
         <br>
-        <input type="button" id="r" value="Resultado">
+        <br>
+        <button id="bt" onclick="btFuncao()">Resultado</button>
+        <br>
+        <p id="r"></p>
     </fieldset>
-    <script>
-        let txtv1 = document.querySelector('#v1');
-        let resultado = document.querySelector('#r');
+    </div>
 
-        resultado.onclik() = function(){
-            if(perseFloat(txtv1.value) > 20){
-                result.innerHTML = 'Valor está entre 20 e 90';
-            }else{
-                result.innerHTML = 'Valor não está entre 20 e 90';
-            }
-        }
-    </script>
+    <script src="../Sala_JavaScript/Resposta_script_Q.js"></script>
 </body>
 </html>
