@@ -45,16 +45,44 @@ function btFuncao(){
     }
 };
 */
+/* Não finalizado
 let n = document.querySelector('#valor');
 let botao = document.querySelector('#bt')
 let resultado = document.querySelector('#r');
 
 function btFuncao(){
-    let i = 0
-    while(parseFloat(n.value) > 4){
-        i = n + i;
-        resultado.innerHTML = 'Valor é: ' + i;
+    while(parseFloat(n.value) > 0){
+        i = n;
+        alert(i.value)
+        resultado.innerHTML = 'Soma dos valores são: ' + i.value;
         i++;
-        n = 0
+        n = 0;
     };
+}
+*/
+/* Resp Questionario 6 
+let resultado = document.querySelector('#r');
+
+function btFuncao(){    
+    let n = '';
+    for(let i = 1; i <= 500; i++){
+        if(i % 5 == 0){
+            n = n + '<br>' + i;
+        };
+    }
+    resultado.innerHTML = 'Os muliplos de 5 são: ' + n;
+}
+*/
+let valor1 = document.querySelector('#valor');
+let valor2 = document.querySelector('#valor2');
+let resultado = document.querySelector('#r');
+
+function btFuncao(){    
+    let n = '';
+    for(let i = 1; valor1.value > valor2.value; i++){
+        if(i % 2 == 0){
+            n = n + '<br>' + i;
+        };
+    }
+    resultado.innerHTML = 'Os muliplos de 5 são: ' + n;
 }
