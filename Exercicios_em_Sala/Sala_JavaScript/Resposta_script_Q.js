@@ -45,3 +45,16 @@ function btFuncao(){
     }
 };
 */
+let n = document.querySelector('#valor');
+let botao = document.querySelector('#bt')
+let resultado = document.querySelector('#r');
+
+function btFuncao(){
+    let i = 0
+    while(parseFloat(n.value) > 4){
+        i = n + i;
+        resultado.innerHTML = 'Valor é: ' + i;
+        i++;
+        n = 0
+    };
+}
