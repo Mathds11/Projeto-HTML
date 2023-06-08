@@ -45,7 +45,7 @@ function btFuncao(){
     }
 };
 */
-/* Rep Questionario 5 Não finalizado*/
+/* Rep Questionario 5 Não finalizado
 let resultado = document.querySelector('#r');
 let n1 = 0;
 
@@ -61,7 +61,7 @@ function btFuncao(){
     };
     resultado.innerHTML = 'Soma dos valores são: ' + i;
 }
-
+*/
 /* Resp Questionario 6 
 let resultado = document.querySelector('#r');
 
