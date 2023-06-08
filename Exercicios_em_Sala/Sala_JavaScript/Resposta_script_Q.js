@@ -45,21 +45,23 @@ function btFuncao(){
     }
 };
 */
-/* Não finalizado
-let n = document.querySelector('#valor');
-let botao = document.querySelector('#bt')
+/* Rep Questionario 5 Não finalizado*/
 let resultado = document.querySelector('#r');
+let n1 = 0;
 
 function btFuncao(){
-    while(parseFloat(n.value) > 0){
-        i = n;
-        alert(i.value)
-        resultado.innerHTML = 'Soma dos valores são: ' + i.value;
-        i++;
-        n = 0;
+    let i = 0;
+    while(parseFloat(n1) >= 0){
+        n1 = parseInt(prompt('Informe o valor: '));
+        if(n1 < 0){
+            break;
+        }else{
+        i += n1;
+        };
     };
+    resultado.innerHTML = 'Soma dos valores são: ' + i;
 }
-*/
+
 /* Resp Questionario 6 
 let resultado = document.querySelector('#r');
 
@@ -73,16 +75,20 @@ function btFuncao(){
     resultado.innerHTML = 'Os muliplos de 5 são: ' + n;
 }
 */
-let valor1 = document.querySelector('#valor');
-let valor2 = document.querySelector('#valor2');
+/*Resp Questionario 7
+var n1 = parseInt(prompt('Informe 1º valor: '));
+var n2 = parseInt(prompt('Informe 2º valor: '));
 let resultado = document.querySelector('#r');
 
 function btFuncao(){    
     let n = '';
-    for(let i = 1; valor1.value > valor2.value; i++){
-        if(i % 2 == 0){
+    for(let i = n1; i < n2; i++){
+        if(i % 2 == 1){
+            continue;
+        }else{
             n = n + '<br>' + i;
         };
-    }
-    resultado.innerHTML = 'Os muliplos de 5 são: ' + n;
+    };
+    resultado.innerHTML = 'Os valores pares entre ' + n1 + ' e ' + n2 + ' são: ' + n;
 }
+*/
