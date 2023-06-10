@@ -1,0 +1,89 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+#princ{
+    width: 70%;
+    margin: 10px;
+    margin-left: 15%;
+    font-family: 'Segoe UI';
+    
+}
+#exercicio{
+    width: 100%;
+    text-align: justify;
+}
+#corpo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+fieldset{
+    background-color: rgb(73, 188, 71);
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px #ff5b5b;
+}
+img{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 30px;
+}
+legend{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 25px;
+    text-align: center;
+    background-color: #ff5b5b;
+    border: 1px solid black;
+    border-radius: 20px;
+
+}
+.botao{
+    text-align: center;
+}
+#calcular{
+    width: 100px;
+    height: 25px;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 15px;
+    outline: none;
+}
+#limpar{
+    width: 100px;
+    height: 25px;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 15px;
+    outline: none;
+}
+#calcular:hover{
+    transition: 0.5s ease-in-out;
+    background: #71ff5b;
+}
+#limpar:hover{
+    transition: 0.5s ease-in-out;
+    background: #ff5b5b;
+}
+#km{
+    border-radius: 10px;
+    border: 1px solid white;
+    outline: none;
+}
+#tpCarro{
+    border-radius: 10px;
+    border: 1px solid white;
+    height: 20px;
+}
+label, input[type="checkbox"]{
+    width: 25px;
+    cursor: pointer;
+}
+#tpCarro{
+    text-align: center;
+}

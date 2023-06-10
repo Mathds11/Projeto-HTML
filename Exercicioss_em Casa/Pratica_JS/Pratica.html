@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratica JS</title>
+    <link rel="stylesheet" href="../Pratica_JS/Pratica.css">
+</head>
+<body>
+    <div id="princ">
+        <div id="exercicio">
+            <p>
+                Criar uma aplicação que possua uma caixa de texto onde será informado
+                o percurso em quilômetros, uma caixa de combinação <i>(< select >)</i> para
+                escolher o tipo do carro (opções: carro A, Carro B e Carro C).
+                Inserir também uma caixa de checagem <i>(< input type="checkbox" >)</i> 
+                uma para marcar se utilizará ar-condicionado. 
+                A tela deve possuir também um botão que ao ser clicado mostre em um 
+                parágrafo o consumo estimado de combustível, sabendo-se que um carro 
+                <b>tipo C faz 12 Km</b> com um litro de gasolina, um <b>tipo B faz 9 Km</b> e o 
+                <b>tipo A faz 8 Km</b> por litro. Se a opção ar-condicionado estiver marcada 
+                deverá ter um acréscimo de 5% no consumo. 
+            </p><br>
+        </div>
+        <div id="corpo">
+        <form method="dialog" id="form">
+            <fieldset>
+                <legend>Resposta</legend><br>
+                <label for="km">Km: </label>
+                <input type="number" id="km"><br>
+                <br>
+                <label for="tpCarro">Tipo de carro: </label>
+                <select name="carro" id="tpCarro">
+                    <option selected disabled>Selecione...</option>
+                    <option value="A">Carro A</option>
+                    <option value="B">Carro B</option>
+                    <option value="C">Carro C</option>
+                </select><br>
+                <br>
+                <label for="validar">
+                    <input type="checkbox" id="validar">Ar-condicionado
+                </label><br>
+                <br>
+                <div class="botao">
+                    <button id="calcular" onclick="btCalculo()">Calcular</button>
+                    <button id="limpar" onclick="btResetar()">Limpar</button>
+                </div><br>
+                <span id="consumo">Quantidade consumida:</span>
+            </fieldset>
+        </form>
+        </div>
+    </div>
+
+    <script src="../Pratica_JS/Pratica.js"></script>    
+</body>
+</html>

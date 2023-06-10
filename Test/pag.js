@@ -7,6 +7,7 @@ texto.onchange = function(){
     r.innerHTML = 'Valor do cubo é: ' + r.value;
 }
 */
+/*
 let valor1 = document.getElementById('valor1');
 let valor2 = document.getElementById('valor2');
 let valor3 = document.getElementById('valor3');
@@ -17,3 +18,4 @@ function btFuncao(){
     i = Math.max(valor1.value , valor2.value , valor3.value);
     texto.innerHTML = 'Maior valor é: ' + i;
 }
+*/
