@@ -7,7 +7,7 @@
     <title>Campos de formulário com javascript</title>
 </head>
 <body>
-    <form method="post" id="form1">
+    <form method="dialog" id="form1"> <!--alterar para method="post"-->
         <input type="text" name="nome" id="nome" placeholder="Seu nome" size="50"><br><br>
         <input type="text" name="telefone" id="telefone" placeholder="(99) 9.9999-9999" size="20" pattern="\([0-9]{2}\)[\s][0-9]{4}-[0-9]{4}">
         <input type="password" id="senha" placeholder="Senha aqui..." size="20">
@@ -17,7 +17,7 @@
         <fieldset>
         <legend>Sexo:</legend>
             <label for="masc">Masculino:</label><input type="radio" name="sexo" value="M" id="masc">
-            <label for="fem">Feminino:</label><input type="radio" name="sexo" value="F" id="fem" checked="checked">
+            <label for="fem">Feminino:</label><input type="radio" name="sexo" value="F" id="fem" > <!--checked="checked" marcação padrao-->
         </fieldset>
         <br>
         <button id="btSexo">Ver</button><br>
@@ -43,11 +43,46 @@
         </fieldset>
         <p id="natural"></p>
         <br>
-        Número: <input type="number" min="0" max=100 step="2">
-        
-        <script>
-            
+        Número: <input type="number" min="0" max=100 step="2"><br>
+        <br>
+        <fieldset style="width: 250px; text-align: center;">
+            <br>
+            <input type="submit" value="enviar" id="btEnviar">
+            <input type="reset" value="limpar">
+            <br><br>
+        </fieldset>
 
+        <script>
+            form1.onsubmit = function(){
+                nome = document.getElementsById('nome')[0];
+                if(nome.value.length < 5){
+                    name.style.backgroundCalor = 'red';
+
+                }
+                return false;
+            }
+            form1.onsubmit = function(){
+                nome = document.getElementsById('nome')[0];
+                if(nome.value.length < 8){
+                    name.style.backgroundCalor = 'red';
+                    return false;
+                }
+            }
+            sexo = document.getElementsByName('sexo');
+            return verSexo(sexo);
+
+
+            function verSexo(sexo){
+                let marcado = false;
+                sexo.foreach(s =>{
+                    if(s.checked == true){
+                        marcado = true;
+                    }
+                });
+                if(marcado == false){
+                    return false;
+                }
+            }
         </script>
     </form>
 </body>
