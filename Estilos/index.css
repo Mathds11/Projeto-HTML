@@ -7,17 +7,16 @@ html, body{
 }
 #social{
     width: 30%;
-    margin-left: 65%;
     display: flex;
+    margin-left: 65%;
     align-items: center;
     flex-direction: row;
     justify-content: flex-end;
-
 }
 .social{
     margin-left: 10px;
 }
-#img1{
+.img1{
     width: 15px;
     height: 15px;
     display: flex;
@@ -25,8 +24,8 @@ html, body{
 }
 #menu{
     width: 30%;
-    margin-left: 65%;
     display: flex;
+    margin-left: 65%;
     align-items: center;
     flex-direction: row;
     justify-content: flex-end;
@@ -34,25 +33,19 @@ html, body{
 .menu{
     margin-left: 30px;
 }
+#txt1{
+    height: 250px;
+}
 a{
     text-decoration: none;
     color: black;
 }
 #corpo{
-    border: 1px solid black;
-    margin-right: 10px;
-    margin-left: 10px;
+    margin-right: 50px;
+    margin-left: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-}
-#img2{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-
 }
 #exercicios{
     background-color: aliceblue;
@@ -63,12 +56,44 @@ a{
 }
 .quadro{
     width: 150px;
-    height: 250px;
+    height: 200px;
     display: flex;
     align-items: center;
     justify-content: center;
     justify-content: space-evenly;
-    border: 1px solid black;
     margin: 0.5%;
     text-align: center;
+    border: 1px groove #78a3b6;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px 1px #78a3b6;
+}
+#lc{
+    margin: 1%;
+    border: 1px solid white;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+
+}
+#local{
+    width: 30px;
+    height: 30px;
+}
+h1{
+    font-family: 'Segoe UI';
+    font-size: 22pt;
+    color: rgb(239, 239, 44);
+
+}
+h2{
+    font-family: 'Comic Sans MS';
+
+}
+#footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
 }
