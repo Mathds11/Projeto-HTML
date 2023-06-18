@@ -3,7 +3,7 @@ let r = document.getElementById('resultado');
 
 v.onchange = function(){
     let i = 0;
-    i = v.value * 3;
+    i = v.value ** 3;
     r.innerHTML = 'O valor do cubo de '+ v.value+'³' + ' é: ' + i;
 };
 

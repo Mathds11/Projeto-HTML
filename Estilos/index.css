@@ -2,127 +2,73 @@ html, body{
     margin: 0;
     padding: 0;
 }
-#principal{
-    width: 90%;
-    height: 135em;
-    margin: 0px 5%;
-    font-family: Verdana;
-    position: absolute;
-    text-align: center;
-    box-sizing: border-box;
-    box-shadow: 10px 2px 10px silver;
-    background-image: url(../Midia/Image/fundo.jpg);
-    margin-top: -20px;
-    background-repeat: no-repeat;
-    background-size: contain;
+#main{
+    background-image: linear-gradient(220deg, #93dbc9 30%, #78a3b6);
+}
+#social{
+    width: 30%;
+    margin-left: 65%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
 
 }
-.header{
-    width: 100%;
-    height: 650px;
-    margin-top: -20px;
+.social{
+    margin-left: 10px;
 }
-#s1{
-    
+#img1{
+    width: 15px;
+    height: 15px;
+    display: flex;
+    flex-direction: row;
 }
-#s2{
-    flex-wrap: wrap;
-    width: 100%;
-    height: 650px;
-    margin-top: -20px;
-    padding-top: 20px;
-    background-color: rgb(133, 194, 37);
-}
-#s3{
-    width: 100%;
-    height: 650px;
-    margin-top: -20px;
-    padding-top: 20px;
-}
-.foot{
-    width: 100%;
-    height: 150px;
-    padding-top: 20px;
-    background-color: rgb(218, 36, 26);
-}
-.int{
-    width: 180px;
-    height: 95%;
-    float: left;
-    position: relative;
-    text-align: center;
-    box-sizing: border-box;
-    margin: 2px;
-    left: 25%;
+#menu{
+    width: 30%;
+    margin-left: 65%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: flex-end;
 }
 .menu{
-    height: 35px;
-    padding: 0.5em;
-    background-color: rgb(218, 36, 26);    
+    margin-left: 30px;
 }
 a{
     text-decoration: none;
-    color: white;
-    font-size: 11pt;
+    color: black;
 }
-#div1{
-
-}
-#di2{
-
-}
-#div3{
-
-}
-#div3{
-
-}
-
-p{
-    left: 50%;
-    top: 50%;
-    margin: 6px 0 0 0px;
-}
-
-.text1{
-    font-size: 14pt;
-    color: white;
-    padding-top: 150px;
-}
-.text2{
-    font-size: 11pt;
-    color: white;
-    margin-top: -15px;  
-}
-#img1{
+#corpo{
+    border: 1px solid black;
+    margin-right: 10px;
+    margin-left: 10px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 250px;
-    height: 300px;
-    top: 25%;
-    left: 30%;
-    float: left;
-    position: relative;
-    border: 1px solid silver;
-    box-shadow: 5px 5px 10px silver;
-    border-radius: 10px;
-    margin-right: 20px;
-    padding: 10px 0 0 2px;
+    justify-content: space-between;
+
 }
 #img2{
     display: flex;
     align-items: center;
+    justify-content: space-between;
+
+
+}
+#exercicios{
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
     justify-content: center;
-    width: 250px;
-    height: 300px;
-    top: 25%;
-    left: 33%;
-    float: left;
-    position: relative;
-    border: 1px solid silver;
-    box-shadow: 5px 5px 10px silver;
-    border-radius: 10px;
-    margin-left: 20px;
-    padding: 10px 0 0 2px;
+    justify-content: space-evenly;
+}
+.quadro{
+    width: 150px;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    border: 1px solid black;
+    margin: 0.5%;
+    text-align: center;
 }
