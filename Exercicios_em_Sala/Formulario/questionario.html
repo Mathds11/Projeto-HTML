@@ -4,9 +4,137 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Questionario</title>
+    <title>Questionario 3Q</title>
 </head>
+<style>
+#corpo{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+p{
+    width: 100%;
+    text-align: justify;
+}
+#questionario{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+fieldset{
+    width: 260px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+input[type=text], input[type=number], label, textarea{
+    width: 250px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+#bt{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+}
+#btEnviar, #btLimpar{
+    cursor: pointer;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px ;
+}
+#final{
+    width: 260px;
+    height: 345px;
+}
+</style>
 <body>
-    
+    <div id="corpo">
+        <p>
+        Crie um questionario com 3 questão para o usuário responder. Todas as
+        questão são obrigatórias. Ao clicar no botão submit, verifique se todas as
+        respostas estão corretas. Caso sim, submeta a página. Caso contrário,
+        apresente uma borda vermelha nos campos que possuírem respostas
+        incorretas.
+        </p><br>
+        <br>
+        <div id="questionario">
+            <form method="dialog" id="form">
+            <fieldset>
+                <legend>Resposta:</legend>
+                <label for="nome">Nome:*</label>
+                <input type="text" id="nome" placeholder="Digite seu nome..." required><br>
+                <label for="idade">Idade:*</label>
+                <input type="number" id="idade" placeholder="Digite sua idade..." required><br>
+                <legend>Comentario:*</legend>
+                <textarea name="texto" id="comentario" cols="30" rows="10" required></textarea><br>
+                <div id="bt">
+                    <input id="btEnviar" type="submit" value="Enviar">
+                    <input id="btLimpar" type="reset" value="Limpar" onclick="limpar()">
+                </div>
+            </fieldset>
+            </form>
+            <span id="resposta1"></span>
+            <span id="resposta2"></span>
+            <span id="resposta3"></span>
+            <fieldset id="final">
+                <legend>Resultodo do Formulario:</legend>
+                <span id="resposta4"></span>
+            </fieldset>
+        </div>
+    </div>
+
+    <script>
+        let n = document.getElementById('nome');
+        let i = document.getElementById('idade');
+        let c = document.getElementById('comentario');
+        let r1 = document.getElementById('resposta1');
+        let r2 = document.getElementById('resposta2');
+        let r3 = document.getElementById('resposta3');
+        let r4 = document.getElementById('resposta4');
+
+        form.onsubmit = function(){
+            if(isNaN(n.value) == false){
+                n.style.borderColor = 'red';
+                r1.innerHTML = 'Nome: está com resposta incorreta';
+            }else{
+                r1.innerHTML = '';
+                n.style.borderColor = '';
+            };
+            
+            if(i.value == ''){
+                i.style.borderColor = 'red';
+                r2.innerHTML = 'Idade: está com resposta incorreta';
+            }else{
+                r2.innerHTML = '';
+                i.style.borderColor = '';
+            };
+            
+            if(c.value == ''){
+                c.style.borderColor = 'red';
+                r3.innerHTML = 'Comentario: está com resposta incorreta';
+            }else{
+                r3.innerHTML = '';
+                c.style.borderColor = '';
+            }
+            return r4.innerHTML = 'Todas resposta estão correta' + '<br>' + 'Nome: ' + n.value + '<br>' + 'Idade: ' + i.value + '<br>' + 'Comentario: '+ c.value;
+        };
+        form.restet = function(){
+            reset.form();
+        };
+        function limpar(){
+            r1.innerHTML = '';
+            r2.innerHTML = '';
+            r3.innerHTML = '';
+            r4.innerHTML = '';
+            n.style.borderColor = '';
+            i.style.borderColor = '';
+            c.style.borderColor = '';
+        }
+    </script>
 </body>
 </html>
