@@ -3,7 +3,10 @@ html, body{
     padding: 0;
 }
 #main{
+    height: 30em;
     background-image: linear-gradient(220deg, #93dbc9 30%, #78a3b6);
+    display: grid;
+
 }
 #social{
     width: 30%;
@@ -34,7 +37,8 @@ html, body{
     margin-left: 30px;
 }
 #txt1{
-    height: 250px;
+    margin-left: 100px;
+    height: 350px;
 }
 a{
     text-decoration: none;
@@ -48,24 +52,26 @@ a{
     justify-content: space-between;
 }
 #exercicios{
-    background-color: aliceblue;
+    width: 35%;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     justify-content: center;
     justify-content: space-evenly;
 }
 .quadro{
-    width: 150px;
-    height: 200px;
+    width: 200px;
+    height: 100px;
     display: flex;
     align-items: center;
     justify-content: center;
     justify-content: space-evenly;
     margin: 0.5%;
     text-align: center;
-    border: 1px groove #78a3b6;
-    border-radius: 10px;
-    box-shadow: 1px 1px 1px 1px #78a3b6;
+    background-image: linear-gradient(220deg, #93dbc2, #ffffff);
+    box-shadow: 1px 5px 2px #78a3b6;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 #lc{
     margin: 1%;
@@ -85,11 +91,9 @@ h1{
     font-family: 'Segoe UI';
     font-size: 22pt;
     color: rgb(239, 239, 44);
-
 }
 h2{
     font-family: 'Comic Sans MS';
-
 }
 #footer{
     display: flex;
