@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Resposta</legend>
+        <p id="resultado"></p>
+        <button id="btPlay">Play</button>
+    </fieldset>
+
+    <script>
+        let r = document.getElementById('resultado');
+
+        btPlay.onclick = function(){
+        let n = '';
+        for(let i = 0; i <= 600; i++){
+            if(i % 2 == 1){
+                continue;
+            }else{
+                n = n + '<br>' + i;
+            };
+        };
+        r.innerHTML = 'Os valores pares entre 0 e 600 são: ' + n;
+    };
+    </script>
+</body>
+</html>
