@@ -3,20 +3,22 @@ html, body{
     padding: 0;
 }
 #main{
-    height: 35em;
+    width: auto;
+    height: auto;
     background-image: linear-gradient(220deg, #93dbc9 30%, #78a3b6);
-    display: grid;
-
+    display: flex;
+    flex-direction: column;
 }
 #social{
-    width: 30%;
+    width: auto;
+    height: auto;
     display: flex;
-    margin-left: 65%;
     align-items: center;
     flex-direction: row;
     justify-content: flex-end;
 }
 .social{
+    margin-right: 2em;
     margin-left: 10px;
 }
 .img1{
@@ -26,19 +28,14 @@ html, body{
     flex-direction: row;
 }
 #menu{
-    width: 30%;
+    margin: 10px;
     display: flex;
-    margin-left: 65%;
     align-items: flex-start;
     flex-direction: row;
     justify-content: flex-end;
 }
 .menu{
-    margin-left: 30px;
-}
-#txt1{
-    margin-left: 100px;
-    height: 350px;
+    margin-left: 2em;
 }
 a{
     text-decoration: none;
@@ -47,39 +44,44 @@ a{
 #corpo{
     margin-right: 50px;
     margin-left: 50px;
+    margin-bottom: 50px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 #exercicios{
-    width: 35%;
+    width: auto;
+    margin: 0;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    justify-content: center;
-    justify-content: space-evenly;
 }
 .quadro{
-    width: 200px;
-    height: 100px;
-    max-height: 100px;
     display: flex;
-    flex: 1 1 auto;
+    flex: 1 auto;
     align-items: center;
     justify-content: center;
     justify-content: space-evenly;
-    margin: 0.5%;
+    margin: 5px;
     text-align: center;
     background-image: linear-gradient(220deg, #93dbc2, #ffffff);
     box-shadow: 1px 5px 2px #78a3b6;
     border-top-left-radius: 20px;
     border-bottom-right-radius: 20px;
 }
+.quadro p{
+    margin: 15px;
+}
+#txt1{
+    width: 80em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
 #lc{
     width: 250px;
     font-family: Verdana;
     font-size: 8pt;
-    margin: 1%;
     border: 1px solid white;
     border-radius: 50px;
     display: flex;
